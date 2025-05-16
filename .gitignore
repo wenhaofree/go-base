@@ -1,0 +1,33 @@
+# Go workspace files
+# Ignore Go module files if you're using Go modules
+/go.mod
+/go.sum
+
+# Go binaries
+/bin/
+/build/
+
+# Go test binary, built by 'go test'
+*.test
+
+# User-specific files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Go coverage reports
+*.out
+*.coverprofile
+
+# Dependency directories
+/vendor/
+
+# GoLand IDE files
+.idea/
+
+# Mac-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
