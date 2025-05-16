@@ -31,3 +31,6 @@
 
 # Windows-specific files
 Thumbs.db
+
+.cursorrules
+.cursor/
