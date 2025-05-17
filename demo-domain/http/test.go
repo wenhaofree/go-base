@@ -51,17 +51,18 @@ func main() {
 	// 构建域名列表，尝试按热门程度和类型排列
 	tlds := []string{
 		// 核心通用 TLDs
-		".com", ".net", ".org", ".info",
+		".com", ".net", ".org", ".info",".io", ".co", ".ai", ".cn",".me", ".tv", ".cc", ".app", ".xyz", ".so",".video", ".domains",".pro", ".top",
+		".dev",".tech",".site",
 		// 常用国家代码 TLDs (部分具有通用性)
-		".io", ".co", ".ai", ".cn", ".uk", ".de", ".jp", ".au", ".ca", ".fr", ".eu", ".us", ".me", ".tv", ".cc", 
+		//  ".uk", ".de", ".jp", ".au", ".ca", ".fr", ".eu", ".us", 
 		// 新通用 TLDs
-		".app", ".xyz", 
+		
 		// ".club", 
 		// ".online", 
-		// ".tech", ".site", ".space", ".website", ".dev",
-		// ".pro", ".top", ".run", ".so", ".live", ".news", ".global", ".today",
+		//   ".space", ".website", 
+		//  ".run",  ".live", ".news", ".global", ".today",
 		// 行业特定或小众
-		// ".video", ".domains", ".link", ".shop", ".art", ".blog", ".design", ".photography", ".guru", ".biz", ".mobi",
+		//  ".link", ".shop", ".art", ".blog", ".design", ".photography", ".guru", ".biz", ".mobi",
 		// ".store",
 	}
 
