@@ -16,6 +16,39 @@ func plusPlus(a, b, c int) int {
 	return a + b + c
 }
 
+// 函数声明
+func greet(name string) string {
+	return fmt.Sprintf("Hello, %s!", name)
+}
+
+// 带多个返回值的函数
+func divide(a, b float64) (float64, error) {
+	if b == 0 {
+		return 0, fmt.Errorf("除零错误")
+	}
+	return a / b, nil
+}
+
+// 带命名返回值的函数
+func multiply(a, b int) (result int) {
+	result = a * b
+	return // 裸返回
+}
+
+// 带可变参数的函数（类似剩余参数）
+func sum(numbers ...int) int {
+	total := 0
+	for _, num := range numbers {
+		total += num
+	}
+	return total
+}
+
+// 函数作为变量（类似函数表达式）
+var add = func(a, b int) int {
+	return a + b
+}
+
 func main() {
 	// 使用name(args)语法调用函数
 	res := plus(1, 2)
@@ -23,4 +56,17 @@ func main() {
 
 	res = plusPlus(1, 2, 3)
 	fmt.Println("1+2+3 =", res)
-} 
+
+	fmt.Println(greet("Bob"))
+
+	result, err := divide(10, 2)
+	if err != nil {
+		fmt.Println("错误:", err)
+	} else {
+		fmt.Println("结果:", result)
+	}
+
+	fmt.Println(multiply(4, 6))
+	fmt.Println(sum(1, 2, 3, 4, 5))
+	fmt.Println(add(5, 3))
+}
